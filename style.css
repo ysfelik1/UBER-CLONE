@@ -82,8 +82,9 @@ li{
     justify-content: space-between;
 }
 .nav-bar{
-    padding: 1.5rem;
+    padding: 1.3rem;
     background-color: black;
+    padding-right: 3rem;
        
 }
 .nav-bar  li{

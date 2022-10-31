@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+span{
+    border-bottom: 1px groove rgb(80, 80, 80);
+    
+}
+p{
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+}
+a{
+    text-decoration: none;
+    
+}
+img {
+    width: 100%;
+}
+h2{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px
+}
+h3{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+li{
+    list-style:none;
+}
+.m-1
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.m-2
+{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.m-3
+{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.p-1{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.p-2{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.gray{
+    color: rgb(62, 62, 62);
+}
+
+/* Navigation bar */
+.menu{
+    display: flex;
+}
+#logo{
+    
+    margin-left: 3rem;
+    margin-right: 2rem;
+    
+    font-size: 24px;
+    font-weight: 400;
+    float: left;
+}
+.nav-justify{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar{
+    padding: 1.5rem;
+    background-color: black;
+       
+}
+.nav-bar  li{
+    display: inline;
+    margin: 1rem;
+  
+}
+.nav-bar  a{
+   
+    color: white;
+    font-family: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+   
+}
+.selected-btn{
+    background-color:white;
+    color: black!important;
+    border-radius: 10px;
+}
+.nav-bar  li:hover{
+background-color:rgb(85, 83, 83);
+border-radius: 10px;
+
+}
+
+
+/* header */
+
+#header-image{
+    background-image: url(images/DotCom_Update_Earner_bg2x.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding: 4rem 6rem;
+}
+#scenery-image{
+    background-image: url(images/HP-U4B-NYC-bkg.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 50%;
+   
+}
+#tab-holder{
+    width: 50%;
+}
+
+#tabs-head{
+    background-color: #f3f3f3;
+    height: 100px;
+    padding: 20px 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    border-bottom: 1px solid #EEEEEE;
+}
+#tabs-body{
+    background-color: white;
+    height: 450px;
+   
+}
+.tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 52px;
+    border-bottom: 3px groove rgb(12, 12, 12);
+}
+.tab img{
+    height: 24px;
+    width: 24px;
+    margin-bottom: 1rem;
+}
+.tab span{
+    border-bottom:none;
+    
+}
+.tab-text{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+.tab span:hover{
+    color: gray;
+}
+.tab-content{
+    padding: 2rem 3rem;
+}
+.tab-content div a {
+    color: rgb(80, 80, 80);
+    font-weight: 300;
+}
+.tab-content div h2 {
+    font-size: 52px;
+    line-height: 60px;
+    font-weight: 700;
+}
+.tab-content div{
+
+    padding: .7rem 0;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    column-gap: 30px;
+    padding: 3rem 5rem;
+}
+.content-item{
+    padding:1em;
+}
+.buttonblack
+{
+    padding: 5px 20px;
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: auto;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*section main*/
+/**/
+.center-area{
+   margin:6rem;
+   
+}
+.area{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.area-item{
+    width: 40vw;
+    /*padding: 1em;*/
+}
+@media screen and (max-width: 600px) {
+    .area-item{
+        width: 80vw;
+    }
+}
+.area-item a{
+    color: rgb(80, 80, 80);
+    font-weight: 300;
+    font-size: 18px;
+    margin-right: 1rem;
+}
+/*section down*/
+.down-area{
+    background-color: rgb(240, 240, 240);
+    
+}
+.gray-area{
+    padding:2rem 6rem;
+}
+#card-holder{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    float: left;
+    align-items: center;
+    background-color: white;
+    min-width: 370px;
+}
+card a{
+    color: rgb(80, 80, 80);
+    font-weight: 300;
+    font-size: 18px;
+    margin-right: 1rem;
+
+}
+
+.uber-logo{
+    float: left;
+    position: relative;
+    margin-right: 10px;
+    
+}
+.uber-link{
+    float: right;
+    position: relative;
+    margin-right: 15px;
+}
+/*footer*/
+footer{
+    background-color: black;
+    color: white;
+    padding: 6rem;
+}
+.ul-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ 
+}
+.ul-item{
+    margin-top: 10px;
+    margin-bottom:10px ;
+}
+.ul-item div{
+    padding:10px;
+}
+.ul-item div a:hover{
+    color: rgb(80, 80, 80);
+}

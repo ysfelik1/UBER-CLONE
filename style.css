@@ -134,13 +134,19 @@ border-radius: 10px;
    
 }
 #tab-holder{
-    width: 50%;
+    position: absolute;
+    top: 8rem;
+    left: 4rem;
+    width: 45%;
 }
+.active {
+    border-bottom: 3px groove rgb(12, 12, 12);
 
+  }
 #tabs-head{
     background-color: #f3f3f3;
     height: 100px;
-    padding: 20px 0px;
+    padding: 10px 0px;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
@@ -148,7 +154,7 @@ border-radius: 10px;
 }
 #tabs-body{
     background-color: white;
-    height: 450px;
+    height:auto;
    
 }
 .tab {
@@ -157,12 +163,11 @@ border-radius: 10px;
     align-items: center;
     justify-content: space-around;
     max-width: 52px;
-    border-bottom: 3px groove rgb(12, 12, 12);
+    height: 108px;
 }
 .tab img{
     height: 24px;
     width: 24px;
-    margin-bottom: 1rem;
 }
 .tab span{
     border-bottom:none;
@@ -178,6 +183,10 @@ border-radius: 10px;
 }
 .tab-content{
     padding: 2rem 3rem;
+    display: none;
+}
+.tab-content-active{
+    display: block;
 }
 .tab-content div a {
     color: rgb(80, 80, 80);
@@ -230,10 +239,17 @@ border-radius: 10px;
     width: 40vw;
     /*padding: 1em;*/
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .area-item{
         width: 80vw;
     }
+    #tab-holder{
+        position: inherit;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
 }
 .area-item a{
     color: rgb(80, 80, 80);
@@ -302,4 +318,15 @@ footer{
 }
 .ul-item div a:hover{
     color: rgb(80, 80, 80);
+}
+
+
+/*******Tabs*****/
+
+.tabs-nav{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    flex-direction: row;
+    list-style: none;
 }

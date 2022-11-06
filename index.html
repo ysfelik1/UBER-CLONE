@@ -40,50 +40,50 @@
         </nav>
 
         <header>
-            <div id="header-image">
-                <div id="tab-holder">
-                    <div id="tabs-head">
-                        <a href="">
-                            <div class="tab">
-                                <img src="images/Earn-filled.svg" alt="tab-icon">
-                                <span class="tab-text">Rijden of bezorgen</span>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="tab">
-                                <img src="images/restaurant-outlined.svg" alt="tab-icon">
-                                <span class="tab-text">Eten</span>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="tab">
-                                <img src="images/car-front-outlined.svg" alt="tab-icon">
-                                <span class="tab-text">Eten rit reken</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div id="tabs-body">
-
-                        <div id="tab-content1" class="tab-content">
-                            <div>
-                                <h2>Kruip achter het stuur en begin met omzet maken</h2>
-                            </div>
-                            <div>
-                                <p>Rijd via het platform met het grootste netwerk van actieve passagiers.</p>
-                            </div>
-                            <div> <button class="buttonblack">Aanmelden als chauffeur</button></div>
-                            <div> <a href=""><span>Meer informatie over rijden en bezorgen</span></a></div>
+          
+            <div id="tab-holder">
+                <div id="tabs-head">
+                   
+                        <div class="tab active" onclick="changeTabs(event, 'tab-content1','DotCom_Update_Earner_bg2x.webp')">
+                            <img src="images/Earn-filled.svg" alt="tab-icon">
+                            <span class="tab-text">Rijden of bezorgen</span>
                         </div>
-                        <div id="tab-content2" class="tab-content">
-                            Tab 2
+                   
+                        <div class="tab" onclick="changeTabs(event, 'tab-content2','Eats_Home_bg_desktop2x.webp')">
+                            <img src="images/restaurant-outlined.svg" alt="tab-icon">
+                            <span class="tab-text">Eten</span>
                         </div>
-                        <div id="tab-content2" class="tab-content">
-                            Tab 3
+                   
+                        <div class="tab" onclick="changeTabs(event, 'tab-content3','DotCom_Update_Rider_bg2x.webp')">
+                            <img src="images/car-front-outlined.svg" alt="tab-icon">
+                            <span class="tab-text">Eten rit reken</span>
                         </div>
-
-                    </div>
+                    
                 </div>
+
+                <div id="tabs-body">
+
+                    <div id="tab-content1" class="tab-content tab-content-active">
+                        <div>
+                            <h2>Kruip achter het stuur en begin met omzet maken</h2>
+                        </div>
+                        <div>
+                            <p>Rijd via het platform met het grootste netwerk van actieve passagiers.</p>
+                        </div>
+                        <div> <button class="buttonblack">Aanmelden als chauffeur</button></div>
+                        <div> <a href=""><span>Meer informatie over rijden en bezorgen</span></a></div>
+                    </div>
+                    <div id="tab-content2" class="tab-content ">
+                        Tab 2
+                    </div>
+                    <div id="tab-content3" class="tab-content ">
+                        Tab 3
+                    </div>
+
+                </div>
+            </div>
+            <div id="header-image">
+               
             </div>
             <div id="scenery-image">
                 <div class="content">
@@ -97,7 +97,6 @@
                 </div>
             </div>
         </header>
-
 
         <section class="center-area">
             <h2 class="gray m-1">Altijd en overal gericht op veiligheid</h2>
@@ -150,8 +149,6 @@
             </div>
         </section>
     -->
-
-
         <footer>
             <ul class="ul-list">
                 <li class="ul-item">
@@ -200,6 +197,30 @@
         </footer>
     </div>
 
+    <script>
+       function changeTabs(evt, tabId,image) {
+  // Declare all variables
+  let i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tab-content");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+    tabcontent[i].className = tabcontent[i].className.replace(" tab-content-active", "");
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tab");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById("header-image").style.backgroundImage = "url(images/"+image+")";
+  document.getElementById(tabId).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+    </script>
 </body>
 
 </html>

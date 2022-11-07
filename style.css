@@ -136,8 +136,8 @@ border-radius: 10px;
 #tab-holder{
     position: absolute;
     top: 8rem;
-    left: 4rem;
-    width: 45%;
+    left: 6rem;
+    width: 44%;
 }
 .active {
     border-bottom: 3px groove rgb(12, 12, 12);
@@ -211,18 +211,28 @@ border-radius: 10px;
 .content-item{
     padding:1em;
 }
-.buttonblack
-{
+.button-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.button-round{
     padding: 5px 20px;
-    background-color: black;
-    color: white;
     height: 50px;
     width: auto;
     border-radius: 8px;
     font-size: 18px;
     font-weight: 500;
 }
-
+.gray{
+    background-color: gray;
+    color: black;
+    border: none;
+}
+.black{
+    background-color: black;
+    color: white;
+}
 /*section main*/
 /**/
 .center-area{

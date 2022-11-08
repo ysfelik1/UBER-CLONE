@@ -123,6 +123,9 @@ border-radius: 10px;
     background-repeat: no-repeat;
     height: 600px;
     padding: 4rem 6rem;
+    background-position: center center;
+   
+    
 }
 #scenery-image{
     background-image: url(images/HP-U4B-NYC-bkg.webp);
@@ -146,10 +149,10 @@ border-radius: 10px;
 #tabs-head{
     background-color: #f3f3f3;
     height: 100px;
-    padding: 10px 0px;
+    padding: 10px  54px;
     display: flex;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: space-between;
     border-bottom: 1px solid #EEEEEE;
 }
 #tabs-body{
@@ -215,6 +218,8 @@ border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 .button-round{
     padding: 5px 20px;
@@ -224,15 +229,36 @@ border-radius: 10px;
     font-size: 18px;
     font-weight: 500;
 }
-.gray{
-    background-color: gray;
+.gray-btn{
+    background-color: rgb(231, 227, 227);
     color: black;
     border: none;
 }
-.black{
+.black-btn{
     background-color: black;
     color: white;
 }
+input{
+    background-color: #F6F6F6;
+    min-height: 52px;
+    background-color: #F6F6F6;
+    padding-right: 33px;
+    padding-left: 41px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border: none;
+    color: #000000;
+    outline: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 24px;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+}
+
+
 /*section main*/
 /**/
 .center-area{
@@ -246,20 +272,71 @@ border-radius: 10px;
     justify-content: space-between;
 }
 .area-item{
-    width: 40vw;
-    /*padding: 1em;*/
+    width: 42vw;
 }
-@media screen and (max-width: 1000px) {
-    .area-item{
-        width: 80vw;
-    }
+.area-item div{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 992px) {
+    
     #tab-holder{
         position: inherit;
         top: 0;
         left: 0;
         width: 100%;
     }
+    #header-image{
+        max-height: 33vw;
+    }
+    #scenery-image{
+        max-height: 66vw;
+    }
+    .content{
+        padding: 1rem 1rem;
+    }
+    .gray-area {
+        padding: 2rem 2rem!important;
+    }
+    #tabs-head{
+     
+        padding-right: 30vw;
+        padding-left: 3rem;
+    }
+    footer{
+        padding: 2rem!important;
+    }
+    .center-area{
+        margin: 2rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .button-holder button{
+        width: 100%;
+        
+    }
+   
+    h2{
+        font-size: 28px!important;
+        line-height: 35px!important;
+    }
+    .nav-bar{
+        padding: 1rem 0rem;
+    }
+    #logo{
+        margin-left: 2rem;
+    }
+    .head-links{
+        padding-left: 0;
+        margin: 0;
+    }
+}
 
+@media screen and (max-width: 600px) {
+    .area-item {
+        width: 100vw;
+       
+    }
 }
 .area-item a{
     color: rgb(80, 80, 80);
@@ -285,7 +362,7 @@ border-radius: 10px;
     float: left;
     align-items: center;
     background-color: white;
-    min-width: 370px;
+    min-width: 358px;
 }
 .card a{
     color: rgb(80, 80, 80);

@@ -11,9 +11,9 @@ span{
 }
 p{
     font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: normal;
-    line-height: 24px;
+    line-height: 2rem;
 }
 a{
     text-decoration: none;
@@ -23,14 +23,15 @@ img {
     width: 100%;
 }
 h2{
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
-    line-height: 40px
+    line-height: 3rem;
 }
 h3{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 2rem
+    ;
 }
 
 li{
@@ -98,9 +99,9 @@ li{
    
     color: white;
     font-family: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 16px;
+    line-height: 1rem;
    
 }
 .selected-btn{
@@ -196,8 +197,8 @@ border-radius: 10px;
     font-weight: 300;
 }
 .tab-content div h2 {
-    font-size: 52px;
-    line-height: 60px;
+    font-size: 3rem;
+    line-height: 4rem;
     font-weight: 700;
 }
 .tab-content div{
@@ -252,7 +253,7 @@ input{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    line-height: 24px;
+    line-height: 2rem;
     box-sizing: border-box;
     margin: 0;
     width: 100%;
@@ -317,8 +318,8 @@ input{
     }
    
     h2{
-        font-size: 28px!important;
-        line-height: 35px!important;
+        font-size: 1.5rem!important;
+        line-height: 2rem!important;
     }
     .nav-bar{
         padding: 1rem 0rem;
